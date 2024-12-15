@@ -27,7 +27,14 @@ return require('packer').startup(function(use)
   use({'hrsh7th/nvim-cmp'})
   use({'hrsh7th/cmp-nvim-lsp'})
   use {
-	  "williamboman/mason.nvim",
-	  "williamboman/mason-lspconfig.nvim",
+	  'williamboman/mason.nvim',
+	  'williamboman/mason-lspconfig.nvim',
+  }
+  use {
+      "windwp/nvim-autopairs",
+      event = "InsertEnter",
+      config = function()
+          require("nvim-autopairs").setup {}
+      end
   }
 end)
