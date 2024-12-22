@@ -74,10 +74,22 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0" },
+    loaded = true,
+    path = "/home/gtd/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/gtd/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["gen.nvim"] = {
+    config = { "\27LJ\2\nN\0\1\5\0\4\0\0066\1\0\0006\3\1\0009\3\2\3'\4\3\0B\1\3\1K\0\1\0$ollama serve > /dev/null 2>&1 &\npopen\aio\npcallê\1\0\1\a\0\a\0\n5\1\1\0009\2\0\0=\2\0\1'\2\2\0009\3\3\0'\4\4\0009\5\5\0'\6\6\0&\2\6\2L\2\2\0\23/api/chat -d $body\tport\6:\thost.curl --silent --no-buffer -X POST http://\1\0\2\vstream\2\nmodel\0\nmodelë\2\1\0\4\0\b\0\f5\0\0\0003\1\1\0=\1\2\0003\1\3\0=\1\4\0006\1\5\0'\3\6\0B\1\2\0029\1\a\1\18\3\0\0B\1\2\1K\0\1\0\nsetup\bgen\frequire\fcommand\0\tinit\0\1\0\15\tfile\1\14retry_map\n<c-r>\vhidden\1\15accept_map\v<c-cr>\fcommand\0\rquit_map\6q\15show_model\1\16show_prompt\1\tinit\0\18no_auto_close\1\17display_mode\nfloat\tport\n11434\thost\016192.168.1.7\ndebug\2\nmodel\fmistral\0" },
+    loaded = true,
+    path = "/home/gtd/.local/share/nvim/site/pack/packer/start/gen.nvim",
+    url = "https://github.com/David-Kunz/gen.nvim"
   },
   harpoon = {
     loaded = true,
@@ -156,6 +168,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: gen.nvim
+time([[Config for gen.nvim]], true)
+try_loadstring("\27LJ\2\nN\0\1\5\0\4\0\0066\1\0\0006\3\1\0009\3\2\3'\4\3\0B\1\3\1K\0\1\0$ollama serve > /dev/null 2>&1 &\npopen\aio\npcallê\1\0\1\a\0\a\0\n5\1\1\0009\2\0\0=\2\0\1'\2\2\0009\3\3\0'\4\4\0009\5\5\0'\6\6\0&\2\6\2L\2\2\0\23/api/chat -d $body\tport\6:\thost.curl --silent --no-buffer -X POST http://\1\0\2\vstream\2\nmodel\0\nmodelë\2\1\0\4\0\b\0\f5\0\0\0003\1\1\0=\1\2\0003\1\3\0=\1\4\0006\1\5\0'\3\6\0B\1\2\0029\1\a\1\18\3\0\0B\1\2\1K\0\1\0\nsetup\bgen\frequire\fcommand\0\tinit\0\1\0\15\tfile\1\14retry_map\n<c-r>\vhidden\1\15accept_map\v<c-cr>\fcommand\0\rquit_map\6q\15show_model\1\16show_prompt\1\tinit\0\18no_auto_close\1\17display_mode\nfloat\tport\n11434\thost\016192.168.1.7\ndebug\2\nmodel\fmistral\0", "config", "gen.nvim")
+time([[Config for gen.nvim]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 -- Config for: rose-pine
 time([[Config for rose-pine]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\26colorscheme rose-pine\bcmd\bvim\0", "config", "rose-pine")

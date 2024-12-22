@@ -10,8 +10,6 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
-vim.opt.wrap = false
-
 vim.opt.termguicolors = true
 
 vim.opt.hlsearch = false
@@ -23,3 +21,7 @@ vim.g.mapleader = " "
 
 vim.opt.list = true
 vim.opt.listchars = { trail = "•", eol = "¬" }
+
+vim.o.mouse = ''
+vim.o.wrap = true
+
