@@ -23,5 +23,5 @@ vim.opt.list = true
 vim.opt.listchars = { trail = "•", eol = "¬" }
 
 vim.o.mouse = ''
-vim.o.wrap = true
+vim.o.wrap = false
 
